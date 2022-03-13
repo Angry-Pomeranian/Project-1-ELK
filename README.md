@@ -1,61 +1,96 @@
-# GitHub-Fundamentals-and-Project
-This is my repository for homework 13's submission and the project.
-Instructions for creating your README.md
- 
-The following is a duplicate of the instructions from the Day 3 README activity. If needed, refer to these instruction to complete your README.
+## Automated ELK Stack Deployment
 
-Instructions
-README formats vary across projects, but you can use this template to get started: README.zip.
+The files in this repository were used to configure the network depicted below.
 
+![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
 
-Download and unzip the template. Inside, you'll find a file called README.md, which contains the template. Much of the contents are provided, but you will need to fill in the TODO fields.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
+  - _TODO: Enter the playbook file._
 
-You will also notice an Images folder. A few TODO items require you to place screenshots in your README. Place your screenshots in the Images folder, and update the README template with the appropriate file name.
-
-
-For homework, you will create a GitHub repository where you will save your project files and this README. Your repository will include:
-
-Your network diagram.
-A description of the deployment.
-Tables specifying access policies and network addresses.
-A description of the investigation you completed using Kibana.
-Usage instructions.
-
-This professional-level repository will prove you have the knowledge and communication skills that hiring managers are looking for.
-While it may feel less substantial than the project itself, one of the most important skills a cybersecurity professional can have is the ability to articulate what they know. The README is an important capstone to the project and will serve as a compelling portfolio item for prospective employers.
-
- Instructions for creating your Network Diagram
- 
-The following is a duplicate of the instructions from the Project Week Networking Diagram activity. If needed, refer to these instruction to complete your network diagram.
-
-Instructions
-Use Gliffy or Draw.io to diagram your network. Make sure your diagram includes:
+This document contains the following details:
+- Description of the Topologu
+- Access Policies
+- ELK Configuration
+  - Beats in Use
+  - Machines Being Monitored
+- How to Use the Ansible Build
 
 
-VNet: Create a box that contains the machines on your virtual network. Within your VNet, diagram the following:
+### Description of the Topology
 
-Jump box and other VMs.
-Ansible control node.
-Specify which VM hosts the DVWA containers.
-Specify which VM hosts ELK stack containers.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
+Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+- _TODO: What does Filebeat watch for?_
+- _TODO: What does Metricbeat record?_
 
-Security group: Create a box around your VNet to indicate the security group, and use a text field to specify the rules you have in place.
+The configuration details of each machine may be found below.
+_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
+| Name     | Function | IP Address | Operating System |
+|----------|----------|------------|------------------|
+| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| TODO     |          |            |                  |
+| TODO     |          |            |                  |
+| TODO     |          |            |                  |
 
-Access from the internet: Add an icon representing the public internet and indicate how it connects to VMs in your VNet.
+### Access Policies
 
+The machines on the internal network are not exposed to the public Internet. 
 
-Use a text field to label each VM with the following information:
+Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- _TODO: Add whitelisted IP addresses_
 
-Network (IP) address
-Operating system and version
-Installed containers
-Exposed ports
-Allowed IP addresses
+Machines within the network can only be accessed by _____.
+- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
+A summary of the access policies in place can be found in the table below.
 
-Check your repo for any errors or typos. You now have a GitHub repository that is ready to present and share with the world.
-Once your repository is complete, submit the link on BCS.
+| Name     | Publicly Accessible | Allowed IP Addresses |
+|----------|---------------------|----------------------|
+| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+|          |                     |                      |
+|          |                     |                      |
+
+### Elk Configuration
+
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+- _TODO: What is the main advantage of automating configuration with Ansible?_
+
+The playbook implements the following tasks:
+- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- ...
+- ...
+
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
+![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+
+### Target Machines & Beats
+This ELK server is configured to monitor the following machines:
+- _TODO: List the IP addresses of the machines you are monitoring_
+
+We have installed the following Beats on these machines:
+- _TODO: Specify which Beats you successfully installed_
+
+These Beats allow us to collect the following information from each machine:
+- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
+### Using the Playbook
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+SSH into the control node and follow the steps below:
+- Copy the _____ file to _____.
+- Update the _____ file to include...
+- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+
+_TODO: Answer the following questions to fill in the blanks:_
+- _Which file is the playbook? Where do you copy it?_
+- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- _Which URL do you navigate to in order to check that the ELK server is running?
+
+_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
