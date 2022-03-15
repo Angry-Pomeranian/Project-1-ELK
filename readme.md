@@ -2,8 +2,10 @@
 
 Nicole kemp
 The files in this repository were used to configure the network depicted below.
+Diagrams/PROJECT-DIAGRAM.jpg
 
-!![image](https://user-images.githubusercontent.com/91113466/158385990-7a6ea2f5-86b9-4195-bdef-6fcec9f18f60.png)(Images/diagram_filename.png)
+![image](https://user-images.githubusercontent.com/91113466/158398535-7683a403-cb09-43e2-9356-d47a7e7ed9f7.png)
+(https://github.com/Angry-Pomeranian/GitHub-Fundamentals-and-Project/blob/e0ec933be565b6d28d793d633fd393fb6753f1a6/Diagrams/PROJECT-DIAGRAM.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _yml_ and _config file_ may be used to install only certain pieces of it, such as Filebeat.
 
