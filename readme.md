@@ -53,14 +53,14 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the _ELK Server machine, (Elk-vm)_ can accept connections from the Internet. Access to this machine is _only_ allowed from the following IP addresses:
 -  Add whitelisted IP addresses:{20.70.50.25} Machines within the network can only be accessed by _Jump-Box-Provisioner_.
-- My local host machine is allowed to acess _Jump-Box-Provisioner_ {123.3.80.103}
+- My local host machine is allowed to acess _Jump-Box-Provisioner_
 -_Jump-Box-Provisioner_ has access to my _Elk-VM_. 
-
+- {13.77.45.61} is my jumpbox ip, {123.3.80.103} is my localhost ip, {20.70.50.25} is my Elk-VM ip. [ALL OF THEASE IPS ARE THE PUBLIC IP'S]
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-|Jump-Box-Provisioner | Yes              | 10.0.0.1 10.0.0.2    |
+|Jump-Box-Provisioner | Yes              |  20.70.50.25  |
 |   Elk-VM |          Yes        |      10.1.0.4                |
 |    Web-1      |          No        |       52.189.221.82               |
 |    Web-2      |         No         |  52.189.221.82
